@@ -1,29 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Frase from './components/Frase';
+import DigaMeuNome from './components/DigaMeuNome';
 
 function App() {
+  const nome = "Murilo"
   return (
     <div className="App">
       <h1>
         MEU APP REACT
       </h1>
-      <p>
+      <HelloWorld />
+      <Frase />
+      <DigaMeuNome nome="Leo"/>
+      <DigaMeuNome nome= {nome} />
+      <p>Outro Paragrafo</p>
 
-      </p>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
